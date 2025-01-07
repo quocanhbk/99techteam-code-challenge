@@ -1,0 +1,33 @@
+# List tasks with filters
+GET http://localhost:3000/api/tasks?isCompleted=false
+
+###
+
+# Create a task
+POST http://localhost:3000/api/tasks
+content-type: application/json
+
+{
+  "title": "Complete 99Techteam Code Challenge",
+  "description": "Complete problem 4, problem 5 and problem 6"
+}
+
+###
+
+# Get task by id
+GET http://localhost:3000/api/tasks/67c1b2a5-5c7a-42dc-ba18-ef86eae7551e
+
+###
+
+# Update task by id
+PUT http://localhost:3000/api/tasks/e9696443-b023-4835-b565-22ce23413926
+content-type: application/json
+
+{
+  "isCompleted": true
+}
+
+###
+
+# Delete task by id
+DELETE http://localhost:3000/api/tasks/e5a83412-cd9b-4f58-aaef-418c2722e1fe
